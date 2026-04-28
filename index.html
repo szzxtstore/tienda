@@ -3,7 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>SZZXT STORE</title>
+
+<!-- LOGO EN LA PESTAÑA DEL NAVEGADOR -->
+<link rel="icon" type="image/png" href="LOGOO.png">
 
 <style>
 *{
@@ -23,7 +27,6 @@ color:#fff;
 overflow-x:hidden;
 }
 
-/* BACKGROUND LIGHT */
 body::before{
 content:"";
 position:fixed;
@@ -35,7 +38,6 @@ radial-gradient(circle at 50% 80%,rgba(255,255,255,.04),transparent 30%);
 z-index:-2;
 }
 
-/* BIG BACKGROUND LOGO */
 body::after{
 content:"";
 position:fixed;
@@ -48,7 +50,6 @@ z-index:-1;
 pointer-events:none;
 }
 
-/* HEADER */
 header{
 width:100%;
 padding:20px 40px;
@@ -65,6 +66,7 @@ z-index:100;
 
 .logo-small{
 width:70px;
+filter:drop-shadow(0 0 15px #fff);
 }
 
 nav a{
@@ -78,11 +80,6 @@ font-weight:900;
 box-shadow:0 0 14px #fff;
 }
 
-nav a:hover{
-transform:scale(1.05);
-}
-
-/* HERO */
 .hero{
 text-align:center;
 padding:70px 20px 40px;
@@ -106,7 +103,6 @@ margin-top:15px;
 color:#ddd;
 }
 
-/* TITLE */
 .section-title{
 text-align:center;
 font-size:2.2rem;
@@ -115,7 +111,6 @@ letter-spacing:5px;
 text-shadow:0 0 16px #fff;
 }
 
-/* PRODUCTS */
 .products{
 width:95%;
 margin:35px auto 80px;
@@ -179,6 +174,10 @@ text-decoration:none;
 box-shadow:0 0 14px #fff;
 }
 
+.btn:hover{
+transform:scale(1.05);
+}
+
 footer{
 border-top:1px solid #fff;
 text-align:center;
@@ -191,6 +190,7 @@ margin-top:60px;
 footer img{
 width:80px;
 margin-bottom:15px;
+filter:drop-shadow(0 0 15px #fff);
 }
 
 @media(max-width:700px){
@@ -237,14 +237,12 @@ grid-template-columns:1fr;
 
 <section class="products">
 
-<!-- STREAMING -->
-
 <div class="card">
 <img class="product-img" src="netflix.png">
 <h2>Netflix Account</h2>
 <p>Streaming premium access</p>
 <div class="price">10€</div>
-<a class="btn" href="#">Buy on Discord</a>
+<a class="btn" href="https://discord.gg/vRx8B9wEQu" target="_blank">Buy on Discord</a>
 </div>
 
 <div class="card">
@@ -252,7 +250,7 @@ grid-template-columns:1fr;
 <h2>Spotify Account</h2>
 <p>Music premium access</p>
 <div class="price">15€</div>
-<a class="btn" href="#">Buy on Discord</a>
+<a class="btn" href="https://discord.gg/vRx8B9wEQu" target="_blank">Buy on Discord</a>
 </div>
 
 <div class="card">
@@ -260,7 +258,7 @@ grid-template-columns:1fr;
 <h2>ChatGPT Account</h2>
 <p>Premium AI access</p>
 <div class="price">10€</div>
-<a class="btn" href="#">Buy on Discord</a>
+<a class="btn" href="https://discord.gg/vRx8B9wEQu" target="_blank">Buy on Discord</a>
 </div>
 
 <div class="card">
@@ -268,7 +266,7 @@ grid-template-columns:1fr;
 <h2>DAZN Account</h2>
 <p>Sports streaming access</p>
 <div class="price">10€</div>
-<a class="btn" href="#">Buy on Discord</a>
+<a class="btn" href="https://discord.gg/vRx8B9wEQu" target="_blank">Buy on Discord</a>
 </div>
 
 <div class="card">
@@ -276,7 +274,7 @@ grid-template-columns:1fr;
 <h2>HBO Max Account</h2>
 <p>Movies & series access</p>
 <div class="price">10€</div>
-<a class="btn" href="#">Buy on Discord</a>
+<a class="btn" href="https://discord.gg/vRx8B9wEQu" target="_blank">Buy on Discord</a>
 </div>
 
 <div class="card">
@@ -284,10 +282,8 @@ grid-template-columns:1fr;
 <h2>Disney+ Account</h2>
 <p>Disney & Marvel access</p>
 <div class="price">10€</div>
-<a class="btn" href="#">Buy on Discord</a>
+<a class="btn" href="https://discord.gg/vRx8B9wEQu" target="_blank">Buy on Discord</a>
 </div>
-
-<!-- GAMING -->
 
 <div class="card">
 <img class="product-img" src="cs2.png">
@@ -295,7 +291,7 @@ grid-template-columns:1fr;
 <p>Full Access</p>
 <p>Specifications: Ask on Discord</p>
 <div class="price">Ask on Discord</div>
-<a class="btn" href="#">Buy on Discord</a>
+<a class="btn" href="https://discord.gg/vRx8B9wEQu" target="_blank">Buy on Discord</a>
 </div>
 
 <div class="card">
@@ -304,7 +300,7 @@ grid-template-columns:1fr;
 <p>Full Access</p>
 <p>Specifications: Ask on Discord</p>
 <div class="price">Ask on Discord</div>
-<a class="btn" href="#">Buy on Discord</a>
+<a class="btn" href="https://discord.gg/vRx8B9wEQu" target="_blank">Buy on Discord</a>
 </div>
 
 <div class="card">
@@ -313,7 +309,7 @@ grid-template-columns:1fr;
 <p>Full Access</p>
 <p>Specifications: Ask on Discord</p>
 <div class="price">Ask on Discord</div>
-<a class="btn" href="#">Buy on Discord</a>
+<a class="btn" href="https://discord.gg/vRx8B9wEQu" target="_blank">Buy on Discord</a>
 </div>
 
 <div class="card">
@@ -322,7 +318,7 @@ grid-template-columns:1fr;
 <p>Full Access</p>
 <p>Specifications: Ask on Discord</p>
 <div class="price">Ask on Discord</div>
-<a class="btn" href="#">Buy on Discord</a>
+<a class="btn" href="https://discord.gg/vRx8B9wEQu" target="_blank">Buy on Discord</a>
 </div>
 
 <div class="card">
@@ -331,7 +327,7 @@ grid-template-columns:1fr;
 <p>Full Access</p>
 <p>Specifications: Ask on Discord</p>
 <div class="price">Ask on Discord</div>
-<a class="btn" href="#">Buy on Discord</a>
+<a class="btn" href="https://discord.gg/vRx8B9wEQu" target="_blank">Buy on Discord</a>
 </div>
 
 </section>
