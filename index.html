@@ -1,12 +1,12 @@
+<!-- PEGA ESTE CÓDIGO EN TU index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>SZZXT STORE</title>
-
-<link rel="icon" type="image/png" href="LOGOO-removebg-preview.png">
+<link rel="icon" href="LOGOO-removebg-preview.png">
 
 <style>
 *{
@@ -16,243 +16,114 @@ box-sizing:border-box;
 font-family:Arial,Helvetica,sans-serif;
 }
 
-html{
-scroll-behavior:smooth;
-}
-
 body{
 background:#000;
 color:#fff;
+text-align:center;
 overflow-x:hidden;
 }
 
-/* FONDO */
-body::before{
-content:"";
-position:fixed;
-inset:0;
-background:
-radial-gradient(circle at 20% 20%,rgba(255,255,255,.05),transparent 25%),
-radial-gradient(circle at 80% 30%,rgba(255,255,255,.04),transparent 25%),
-radial-gradient(circle at 50% 80%,rgba(255,255,255,.03),transparent 30%);
-z-index:-3;
-}
-
-/* LOGO GRANDE DE FONDO */
+/* Fondo logo */
 body::after{
 content:"";
 position:fixed;
 top:50%;
 left:50%;
-width:850px;
-height:850px;
 transform:translate(-50%,-50%);
-background:url("LOGOO-removebg-preview.png") center center no-repeat;
+width:700px;
+height:700px;
+background:url("LOGOO-removebg-preview.png") center no-repeat;
 background-size:contain;
-opacity:.14;
-filter:drop-shadow(0 0 45px #fff);
-z-index:-2;
-pointer-events:none;
+opacity:.08;
+z-index:-1;
 }
 
-/* HEADER */
+/* Header */
 header{
-width:100%;
-padding:18px 40px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-border-bottom:1px solid #fff;
-box-shadow:0 0 18px #fff;
-background:rgba(0,0,0,.82);
-position:sticky;
-top:0;
-z-index:999;
-backdrop-filter:blur(8px);
+padding:25px;
 }
 
-.logo-small{
-width:70px;
-filter:drop-shadow(0 0 14px #fff);
-}
-
-nav a{
-text-decoration:none;
-color:#000;
-background:#fff;
-padding:12px 18px;
-margin-left:10px;
-border-radius:12px;
-font-weight:900;
-box-shadow:0 0 14px #fff;
-transition:.2s;
-}
-
-nav a:hover{
-transform:translateY(-2px) scale(1.03);
-}
-
-/* HERO */
-.hero{
-text-align:center;
-padding:70px 20px 30px;
-}
-
-.hero-logo{
-width:260px;
-max-width:90%;
-filter:drop-shadow(0 0 24px #fff);
-}
-
-.hero h1{
-font-size:4rem;
-letter-spacing:8px;
-margin-top:20px;
-text-shadow:0 0 18px #fff;
-}
-
-.hero p{
-margin-top:14px;
-color:#ddd;
-font-size:1.1rem;
-}
-
-/* TITULOS */
-.section-title{
-text-align:center;
-font-size:2.2rem;
-letter-spacing:5px;
-margin-top:40px;
-margin-bottom:20px;
+header h1{
+font-size:55px;
+letter-spacing:6px;
 text-shadow:0 0 15px #fff;
 }
 
-/* PRODUCTOS */
+header p{
+font-size:14px;
+color:#ddd;
+margin-top:10px;
+}
+
+/* Titulo */
+.section-title{
+font-size:45px;
+margin:20px 0;
+text-shadow:0 0 15px #fff;
+}
+
+/* Grid */
 .products{
-width:95%;
-margin:auto;
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:28px;
-padding-bottom:80px;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:20px;
+max-width:1400px;
+margin:auto;
 }
 
+/* Cards */
 .card{
-background:rgba(255,255,255,.03);
-border:1px solid rgba(255,255,255,.7);
-border-radius:18px;
-padding:16px;
-text-align:center;
-box-shadow:0 0 18px rgba(255,255,255,.35);
-transition:.25s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-box-shadow:0 0 28px #fff;
-}
-
-.product-img{
-width:100%;
-height:180px;
-object-fit:cover;
-border-radius:14px;
-margin-bottom:14px;
 border:1px solid #fff;
-box-shadow:0 0 18px rgba(255,255,255,.35);
+border-radius:18px;
+padding:14px;
+box-shadow:0 0 18px #fff;
+background:rgba(255,255,255,.02);
+}
+
+.card img{
+width:100%;
+height:170px;
+object-fit:cover;
+border-radius:12px;
+border:1px solid #fff;
+margin-bottom:10px;
 }
 
 .card h2{
-font-size:1.2rem;
-margin-bottom:10px;
-}
-
-.card p{
-font-size:.95rem;
-color:#d7d7d7;
+font-size:18px;
 margin-bottom:8px;
 }
 
+.card p{
+font-size:13px;
+margin-bottom:6px;
+color:#ddd;
+}
+
 .price{
-font-size:1.05rem;
 font-weight:900;
-color:#fff;
+margin:10px 0;
 text-shadow:0 0 10px #fff;
-margin-top:10px;
-margin-bottom:10px;
 }
 
 .btn{
 display:inline-block;
-padding:12px 18px;
+margin-top:8px;
+padding:10px 16px;
 background:#fff;
 color:#000;
 font-weight:900;
 text-decoration:none;
-border-radius:12px;
-box-shadow:0 0 14px #fff;
-transition:.2s;
+border-radius:10px;
+box-shadow:0 0 15px #fff;
 }
 
-.btn:hover{
-transform:scale(1.04);
-}
-
-/* FOOTER */
 footer{
-margin-top:50px;
+margin-top:60px;
 padding:30px;
-text-align:center;
-border-top:1px solid #fff;
+border-top:2px solid #fff;
 box-shadow:0 0 18px #fff;
-background:rgba(0,0,0,.82);
-}
-
-footer img{
-width:80px;
-margin-bottom:14px;
-filter:drop-shadow(0 0 14px #fff);
-}
-
-footer p{
-color:#ddd;
-margin-top:6px;
-}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-
-header{
-flex-direction:column;
-gap:15px;
-padding:20px;
-}
-
-nav{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:10px;
-}
-
-nav a{
-margin:0;
-}
-
-.hero h1{
-font-size:2.4rem;
-letter-spacing:4px;
-}
-
-.hero-logo{
-width:180px;
-}
-
-body::after{
-width:500px;
-height:500px;
-opacity:.12;
-}
 }
 </style>
 </head>
@@ -260,128 +131,116 @@ opacity:.12;
 <body>
 
 <header>
-<img src="LOGOO-removebg-preview.png" class="logo-small">
-
-<nav>
-<a href="https://discord.gg/vRx8B9wEQu" target="_blank">Discord</a>
-<a href="#products">Products</a>
-<a href="#support">Support</a>
-</nav>
-</header>
-
-<section class="hero">
-<img src="LOGOO-removebg-preview.png" class="hero-logo">
 <h1>SZZXT STORE</h1>
 <p>Premium Digital Products • Instant Delivery</p>
-</section>
+</header>
 
-<h2 class="section-title" id="products">PRODUCTS</h2>
+<h2 class="section-title">PRODUCTS</h2>
 
 <section class="products">
 
 <div class="card">
-<img src="netflix.png" class="product-img">
-<h2>Netflix Account</h2>
+<img src="netflix.png">
+<h2>Netflix Account - Lifetime Access</h2>
 <p>Full Access</p>
 <p>Specifications: Ask on Discord</p>
 <div class="price">10€</div>
-<a href="https://discord.gg/vRx8B9wEQu" target="_blank" class="btn">Buy on Discord</a>
+<a class="btn" href="https://discord.gg/vRx8B9wEQu" target="_blank">Buy on Discord</a>
 </div>
 
 <div class="card">
-<img src="spoty.png" class="product-img">
-<h2>Spotify Account</h2>
+<img src="spoty.png">
+<h2>Spotify Account - Lifetime Access</h2>
 <p>Full Access</p>
 <p>Specifications: Ask on Discord</p>
 <div class="price">15€</div>
-<a href="https://discord.gg/vRx8B9wEQu" target="_blank" class="btn">Buy on Discord</a>
+<a class="btn" href="https://discord.gg/vRx8B9wEQu" target="_blank">Buy on Discord</a>
 </div>
 
 <div class="card">
-<img src="chagpt.png" class="product-img">
-<h2>ChatGPT Account</h2>
+<img src="chagpt.png">
+<h2>ChatGPT Account - Lifetime Access</h2>
 <p>Full Access</p>
 <p>Specifications: Ask on Discord</p>
 <div class="price">10€</div>
-<a href="https://discord.gg/vRx8B9wEQu" target="_blank" class="btn">Buy on Discord</a>
+<a class="btn" href="https://discord.gg/vRx8B9wEQu" target="_blank">Buy on Discord</a>
 </div>
 
 <div class="card">
-<img src="dazn.png" class="product-img">
-<h2>DAZN Account</h2>
+<img src="dazn.png">
+<h2>DAZN Account - Lifetime Access</h2>
 <p>Full Access</p>
 <p>Specifications: Ask on Discord</p>
 <div class="price">10€</div>
-<a href="https://discord.gg/vRx8B9wEQu" target="_blank" class="btn">Buy on Discord</a>
+<a class="btn" href="https://discord.gg/vRx8B9wEQu" target="_blank">Buy on Discord</a>
 </div>
 
 <div class="card">
-<img src="hbomax.png" class="product-img">
-<h2>HBO Max Account</h2>
+<img src="hbomax.png">
+<h2>HBO Max Account - Lifetime Access</h2>
 <p>Full Access</p>
 <p>Specifications: Ask on Discord</p>
 <div class="price">10€</div>
-<a href="https://discord.gg/vRx8B9wEQu" target="_blank" class="btn">Buy on Discord</a>
+<a class="btn" href="https://discord.gg/vRx8B9wEQu" target="_blank">Buy on Discord</a>
 </div>
 
 <div class="card">
-<img src="disney.png" class="product-img">
-<h2>Disney+ Account</h2>
+<img src="disney.png">
+<h2>Disney+ Account - Lifetime Access</h2>
 <p>Full Access</p>
 <p>Specifications: Ask on Discord</p>
 <div class="price">10€</div>
-<a href="https://discord.gg/vRx8B9wEQu" target="_blank" class="btn">Buy on Discord</a>
+<a class="btn" href="https://discord.gg/vRx8B9wEQu" target="_blank">Buy on Discord</a>
 </div>
 
 <div class="card">
-<img src="cs2.png" class="product-img">
-<h2>CS2 Accounts</h2>
+<img src="cs2.png">
+<h2>CS2 Accounts - Lifetime Access</h2>
 <p>Full Access</p>
 <p>Specifications: Ask on Discord</p>
 <div class="price">Ask on Discord</div>
-<a href="https://discord.gg/vRx8B9wEQu" target="_blank" class="btn">Buy on Discord</a>
+<a class="btn" href="https://discord.gg/vRx8B9wEQu" target="_blank">Buy on Discord</a>
 </div>
 
 <div class="card">
-<img src="valorant.png" class="product-img">
-<h2>Valorant Accounts</h2>
+<img src="valorant.png">
+<h2>Valorant Accounts - Lifetime Access</h2>
 <p>Full Access</p>
 <p>Specifications: Ask on Discord</p>
 <div class="price">Ask on Discord</div>
-<a href="https://discord.gg/vRx8B9wEQu" target="_blank" class="btn">Buy on Discord</a>
+<a class="btn" href="https://discord.gg/vRx8B9wEQu" target="_blank">Buy on Discord</a>
 </div>
 
 <div class="card">
-<img src="fornite.png" class="product-img">
-<h2>Fortnite Accounts</h2>
+<img src="fornite.png">
+<h2>Fortnite Accounts - Lifetime Access</h2>
 <p>Full Access</p>
 <p>Specifications: Ask on Discord</p>
 <div class="price">Ask on Discord</div>
-<a href="https://discord.gg/vRx8B9wEQu" target="_blank" class="btn">Buy on Discord</a>
+<a class="btn" href="https://discord.gg/vRx8B9wEQu" target="_blank">Buy on Discord</a>
 </div>
 
 <div class="card">
-<img src="apex.png" class="product-img">
-<h2>Apex Legends Accounts</h2>
+<img src="apex.png">
+<h2>Apex Legends Accounts - Lifetime Access</h2>
 <p>Full Access</p>
 <p>Specifications: Ask on Discord</p>
 <div class="price">Ask on Discord</div>
-<a href="https://discord.gg/vRx8B9wEQu" target="_blank" class="btn">Buy on Discord</a>
+<a class="btn" href="https://discord.gg/vRx8B9wEQu" target="_blank">Buy on Discord</a>
 </div>
 
 <div class="card">
-<img src="r6.png" class="product-img">
-<h2>Rainbow Six Accounts</h2>
+<img src="r6.png">
+<h2>Rainbow Six Accounts - Lifetime Access</h2>
 <p>Full Access</p>
 <p>Specifications: Ask on Discord</p>
 <div class="price">Ask on Discord</div>
-<a href="https://discord.gg/vRx8B9wEQu" target="_blank" class="btn">Buy on Discord</a>
+<a class="btn" href="https://discord.gg/vRx8B9wEQu" target="_blank">Buy on Discord</a>
 </div>
 
 </section>
 
-<footer id="support">
-<img src="LOGOO-removebg-preview.png">
+<footer>
 <p>© 2026 SZZXT STORE</p>
 <p>Open a ticket on Discord for purchases, support and warranty.</p>
 </footer>
