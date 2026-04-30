@@ -26,7 +26,6 @@ color:#fff;
 overflow-x:hidden;
 }
 
-/* FONDO */
 body::before{
 content:"";
 position:fixed;
@@ -38,7 +37,6 @@ radial-gradient(circle at 50% 80%,rgba(255,255,255,.03),transparent 30%);
 z-index:-3;
 }
 
-/* LOGO GRANDE DE FONDO */
 body::after{
 content:"";
 position:fixed;
@@ -55,22 +53,15 @@ z-index:-2;
 pointer-events:none;
 }
 
-/* HEADER */
 header{
 width:100%;
 padding:18px 40px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-
-/* SOLO LINEA ARRIBA */
 border-top:1px solid #fff;
-
-/* QUITADA LINEA ABAJO */
 border-bottom:none;
-
 box-shadow:0 -2px 18px #fff;
-
 background:rgba(0,0,0,.82);
 position:sticky;
 top:0;
@@ -99,7 +90,6 @@ nav a:hover{
 transform:translateY(-2px) scale(1.03);
 }
 
-/* HERO */
 .hero{
 text-align:center;
 padding:70px 20px 30px;
@@ -124,7 +114,6 @@ color:#ddd;
 font-size:1.1rem;
 }
 
-/* TITULOS */
 .section-title{
 text-align:center;
 font-size:2.2rem;
@@ -134,14 +123,21 @@ margin-bottom:20px;
 text-shadow:0 0 15px #fff;
 }
 
-/* PRODUCTOS */
+.category-title{
+text-align:center;
+font-size:1.6rem;
+letter-spacing:4px;
+margin:35px 0 25px;
+text-shadow:0 0 12px #fff;
+}
+
 .products{
 width:95%;
 margin:auto;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:28px;
-padding-bottom:80px;
+padding-bottom:45px;
 }
 
 .card{
@@ -205,7 +201,6 @@ transition:.2s;
 transform:scale(1.04);
 }
 
-/* FOOTER */
 footer{
 margin-top:50px;
 padding:30px;
@@ -226,9 +221,7 @@ color:#ddd;
 margin-top:6px;
 }
 
-/* RESPONSIVE */
 @media(max-width:768px){
-
 header{
 flex-direction:column;
 gap:15px;
@@ -284,6 +277,8 @@ opacity:.12;
 
 <h2 class="section-title" id="products">PRODUCTS</h2>
 
+<h3 class="category-title">UTILITY ACCOUNTS</h3>
+
 <section class="products">
 
 <div class="card"><img src="netflix.png" class="product-img"><h2>Netflix Account - Lifetime Access</h2><p>Full Access</p><p>Specifications: Ask on Discord</p><div class="price">10€</div><a href="https://discord.gg/vRx8B9wEQu" target="_blank" class="btn">Buy on Discord</a></div>
@@ -298,6 +293,16 @@ opacity:.12;
 
 <div class="card"><img src="disney.png" class="product-img"><h2>Disney+ Account - Lifetime Access</h2><p>Full Access</p><p>Specifications: Ask on Discord</p><div class="price">10€</div><a href="https://discord.gg/vRx8B9wEQu" target="_blank" class="btn">Buy on Discord</a></div>
 
+<div class="card"><img src="paramount.png" class="product-img"><h2>Paramount+ Account - Lifetime Access</h2><p>Full Access</p><p>Specifications: Ask on Discord</p><div class="price">10€</div><a href="https://discord.gg/vRx8B9wEQu" target="_blank" class="btn">Buy on Discord</a></div>
+
+<div class="card"><img src="movistar+.png" class="product-img"><h2>Movistar+ Account - Lifetime Access</h2><p>Full Access</p><p>Specifications: Ask on Discord</p><div class="price">10€</div><a href="https://discord.gg/vRx8B9wEQu" target="_blank" class="btn">Buy on Discord</a></div>
+
+</section>
+
+<h3 class="category-title">GAME ACCOUNTS</h3>
+
+<section class="products">
+
 <div class="card"><img src="cs2.png" class="product-img"><h2>CS2 Accounts - Lifetime Access</h2><p>Full Access</p><p>Specifications: Ask on Discord</p><div class="price">Ask on Discord</div><a href="https://discord.gg/vRx8B9wEQu" target="_blank" class="btn">Buy on Discord</a></div>
 
 <div class="card"><img src="valorant.png" class="product-img"><h2>Valorant Accounts - Lifetime Access</h2><p>Full Access</p><p>Specifications: Ask on Discord</p><div class="price">Ask on Discord</div><a href="https://discord.gg/vRx8B9wEQu" target="_blank" class="btn">Buy on Discord</a></div>
@@ -307,6 +312,8 @@ opacity:.12;
 <div class="card"><img src="apex.png" class="product-img"><h2>Apex Legends Accounts - Lifetime Access</h2><p>Full Access</p><p>Specifications: Ask on Discord</p><div class="price">Ask on Discord</div><a href="https://discord.gg/vRx8B9wEQu" target="_blank" class="btn">Buy on Discord</a></div>
 
 <div class="card"><img src="r6.png" class="product-img"><h2>Rainbow Six Accounts - Lifetime Access</h2><p>Full Access</p><p>Specifications: Ask on Discord</p><div class="price">Ask on Discord</div><a href="https://discord.gg/vRx8B9wEQu" target="_blank" class="btn">Buy on Discord</a></div>
+
+<div class="card"><img src="roblox.png" class="product-img"><h2>Roblox Account - Lifetime Access</h2><p>Full Access</p><p>Specifications: Ask on Discord</p><div class="price">Ask on Discord</div><a href="https://discord.gg/vRx8B9wEQu" target="_blank" class="btn">Buy on Discord</a></div>
 
 </section>
 
