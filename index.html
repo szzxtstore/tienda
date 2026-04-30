@@ -16,16 +16,13 @@ box-sizing:border-box;
 font-family:Arial,Helvetica,sans-serif;
 }
 
-html{
-scroll-behavior:smooth;
-}
-
 body{
 background:#000;
 color:#fff;
 overflow-x:hidden;
 }
 
+/* FONDO */
 body::before{
 content:"";
 position:fixed;
@@ -37,6 +34,7 @@ radial-gradient(circle at 50% 80%,rgba(255,255,255,.03),transparent 30%);
 z-index:-3;
 }
 
+/* LOGO FONDO */
 body::after{
 content:"";
 position:fixed;
@@ -45,217 +43,117 @@ left:50%;
 width:850px;
 height:850px;
 transform:translate(-50%,-50%);
-background:url("LOGOO-removebg-preview.png") center center no-repeat;
+background:url("LOGOO-removebg-preview.png") center no-repeat;
 background-size:contain;
 opacity:.14;
-filter:drop-shadow(0 0 45px #fff);
 z-index:-2;
-pointer-events:none;
 }
 
+/* HEADER */
 header{
-width:100%;
 padding:18px 40px;
 display:flex;
 justify-content:space-between;
 align-items:center;
 border-top:1px solid #fff;
-border-bottom:none;
 box-shadow:0 -2px 18px #fff;
-background:rgba(0,0,0,.82);
+background:rgba(0,0,0,.85);
 position:sticky;
 top:0;
 z-index:999;
-backdrop-filter:blur(8px);
 }
 
 .logo-small{
 width:70px;
-filter:drop-shadow(0 0 14px #fff);
 }
 
 nav a{
-text-decoration:none;
 color:#000;
 background:#fff;
-padding:12px 18px;
+padding:10px 16px;
 margin-left:10px;
-border-radius:12px;
+border-radius:10px;
 font-weight:900;
-box-shadow:0 0 14px #fff;
-transition:.2s;
+text-decoration:none;
 }
 
-nav a:hover{
-transform:translateY(-2px) scale(1.03);
-}
-
+/* HERO */
 .hero{
 text-align:center;
 padding:70px 20px 30px;
 }
 
 .hero-logo{
-width:260px;
-max-width:90%;
-filter:drop-shadow(0 0 24px #fff);
+width:200px;
 }
 
 .hero h1{
-font-size:4rem;
-letter-spacing:8px;
-margin-top:20px;
-text-shadow:0 0 18px #fff;
+font-size:3rem;
+letter-spacing:6px;
+margin-top:15px;
 }
 
-.hero p{
-margin-top:14px;
-color:#ddd;
-font-size:1.1rem;
-}
-
+/* TITULOS */
 .section-title{
 text-align:center;
-font-size:2.2rem;
-letter-spacing:5px;
+font-size:2rem;
 margin-top:40px;
-margin-bottom:20px;
-text-shadow:0 0 15px #fff;
 }
 
 .category-title{
 text-align:center;
-font-size:1.6rem;
-letter-spacing:4px;
-margin:35px 0 25px;
-text-shadow:0 0 12px #fff;
+font-size:1.5rem;
+margin:30px 0;
 }
 
+/* PRODUCTOS */
 .products{
 width:95%;
 margin:auto;
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:28px;
-padding-bottom:45px;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:25px;
 }
 
 .card{
 background:rgba(255,255,255,.03);
-border:1px solid rgba(255,255,255,.7);
-border-radius:18px;
-padding:16px;
+border:1px solid #fff;
+border-radius:15px;
+padding:15px;
 text-align:center;
-box-shadow:0 0 18px rgba(255,255,255,.35);
-transition:.25s;
 }
 
-.card:hover{
-transform:translateY(-8px);
-box-shadow:0 0 28px #fff;
-}
-
-/* 🔥 AQUI ESTA EL FIX 🔥 */
+/* 🔥 FIX IMÁGENES 🔥 */
 .product-img{
 width:100%;
 height:180px;
 object-fit:contain;
 background:#000;
-border-radius:14px;
-margin-bottom:14px;
-border:1px solid #fff;
-box-shadow:0 0 18px rgba(255,255,255,.35);
+border-radius:10px;
 padding:6px;
-}
-
-.card h2{
-font-size:1.2rem;
-margin-bottom:10px;
-}
-
-.card p{
-font-size:.95rem;
-color:#d7d7d7;
-margin-bottom:8px;
+border:1px solid #fff;
 }
 
 .price{
-font-size:1.05rem;
 font-weight:900;
-color:#fff;
-text-shadow:0 0 10px #fff;
-margin-top:10px;
-margin-bottom:10px;
+margin:10px 0;
 }
 
 .btn{
 display:inline-block;
-padding:12px 18px;
+padding:10px 15px;
 background:#fff;
 color:#000;
 font-weight:900;
+border-radius:10px;
 text-decoration:none;
-border-radius:12px;
-box-shadow:0 0 14px #fff;
-transition:.2s;
-}
-
-.btn:hover{
-transform:scale(1.04);
 }
 
 footer{
-margin-top:50px;
-padding:30px;
+margin-top:40px;
+padding:20px;
 text-align:center;
 border-top:1px solid #fff;
-box-shadow:0 0 18px #fff;
-background:rgba(0,0,0,.82);
-}
-
-footer img{
-width:80px;
-margin-bottom:14px;
-filter:drop-shadow(0 0 14px #fff);
-}
-
-footer p{
-color:#ddd;
-margin-top:6px;
-}
-
-@media(max-width:768px){
-header{
-flex-direction:column;
-gap:15px;
-padding:20px;
-}
-
-nav{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:10px;
-}
-
-nav a{
-margin:0;
-}
-
-.hero h1{
-font-size:2.4rem;
-letter-spacing:4px;
-}
-
-.hero-logo{
-width:180px;
-}
-
-body::after{
-width:500px;
-height:500px;
-opacity:.12;
-}
 }
 </style>
 </head>
@@ -264,11 +162,9 @@ opacity:.12;
 
 <header>
 <img src="LOGOO-removebg-preview.png" class="logo-small">
-
 <nav>
 <a href="https://discord.gg/vRx8B9wEQu" target="_blank">Discord</a>
 <a href="#products">Products</a>
-<a href="#support">Support</a>
 </nav>
 </header>
 
@@ -283,3 +179,47 @@ opacity:.12;
 <h3 class="category-title">UTILITY ACCOUNTS</h3>
 
 <section class="products">
+
+<div class="card"><img src="netflix.png" class="product-img"><h2>Netflix - Lifetime</h2><div class="price">10€</div><a href="https://discord.gg/vRx8B9wEQu" class="btn">Buy</a></div>
+
+<div class="card"><img src="spoty.png" class="product-img"><h2>Spotify - Lifetime</h2><div class="price">15€</div><a href="https://discord.gg/vRx8B9wEQu" class="btn">Buy</a></div>
+
+<div class="card"><img src="chagpt.png" class="product-img"><h2>ChatGPT - Lifetime</h2><div class="price">10€</div><a href="https://discord.gg/vRx8B9wEQu" class="btn">Buy</a></div>
+
+<div class="card"><img src="dazn.png" class="product-img"><h2>DAZN - Lifetime</h2><div class="price">10€</div><a href="https://discord.gg/vRx8B9wEQu" class="btn">Buy</a></div>
+
+<div class="card"><img src="hbomax.png" class="product-img"><h2>HBO Max - Lifetime</h2><div class="price">10€</div><a href="https://discord.gg/vRx8B9wEQu" class="btn">Buy</a></div>
+
+<div class="card"><img src="disney.png" class="product-img"><h2>Disney+ - Lifetime</h2><div class="price">10€</div><a href="https://discord.gg/vRx8B9wEQu" class="btn">Buy</a></div>
+
+<div class="card"><img src="paramount.png" class="product-img"><h2>Paramount+ - Lifetime</h2><div class="price">10€</div><a href="https://discord.gg/vRx8B9wEQu" class="btn">Buy</a></div>
+
+<div class="card"><img src="movistar+.png" class="product-img"><h2>Movistar+ - Lifetime</h2><div class="price">10€</div><a href="https://discord.gg/vRx8B9wEQu" class="btn">Buy</a></div>
+
+</section>
+
+<h3 class="category-title">GAME ACCOUNTS</h3>
+
+<section class="products">
+
+<div class="card"><img src="cs2.png" class="product-img"><h2>CS2 Accounts</h2><div class="price">Ask on Discord</div><a href="https://discord.gg/vRx8B9wEQu" class="btn">Buy</a></div>
+
+<div class="card"><img src="valorant.png" class="product-img"><h2>Valorant Accounts</h2><div class="price">Ask on Discord</div><a href="https://discord.gg/vRx8B9wEQu" class="btn">Buy</a></div>
+
+<div class="card"><img src="fornite.png" class="product-img"><h2>Fortnite Accounts</h2><div class="price">Ask on Discord</div><a href="https://discord.gg/vRx8B9wEQu" class="btn">Buy</a></div>
+
+<div class="card"><img src="apex.png" class="product-img"><h2>Apex Accounts</h2><div class="price">Ask on Discord</div><a href="https://discord.gg/vRx8B9wEQu" class="btn">Buy</a></div>
+
+<div class="card"><img src="r6.png" class="product-img"><h2>Rainbow Six</h2><div class="price">Ask on Discord</div><a href="https://discord.gg/vRx8B9wEQu" class="btn">Buy</a></div>
+
+<div class="card"><img src="roblox.png" class="product-img"><h2>Roblox Account</h2><div class="price">Ask on Discord</div><a href="https://discord.gg/vRx8B9wEQu" class="btn">Buy</a></div>
+
+</section>
+
+<footer>
+<p>© 2026 SZZXT STORE</p>
+<p>Open a ticket on Discord for support</p>
+</footer>
+
+</body>
+</html>
